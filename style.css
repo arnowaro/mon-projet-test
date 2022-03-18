@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none ;
+    
+    scroll-behavior: smooth;}
+
+body {
+    width: 100% ;}
+
+p {
+     color: #7e7a7a ; 
+    line-height: 2; 
+    justify-content: center; 
+    text-align: justify; 
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 420px;}
+
+@font-face /* Police font : Seigneur des anneaux*/ {
+    font-family: "ringbearer";
+    src: url(/ringbearer/RINGM___.TTF);}
+
+img {
+    border-radius: 10px; }
+
+#section1 img { margin-top: 8px;
+    height: 520px; width: auto;
+    box-shadow:  5px 5px 5px 0px rgba(0, 0, 0, 0.322);}
+
+
+
+
+/* menu nav bar */ 
+ 
+.logo {
+    color: rgb(219, 130, 67); margin-left: 5%; font-size: 150%;}
+
+nav {
+    display: flex;
+    justify-items: auto;
+    font-family: 'Abhaya Libre';
+    max-height: 8vh ;}
+
+.menu {
+    display: flex;
+    align-items  :center;
+    color: #5a3314 ;
+    transform: uppercase;
+    float: left; }  
+    ul { 
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        list-style: none;}
+    li { 
+    width: 200px;
+    color: #9c5b26;}
+.menu ul li a {
+    color: #9c5b26;}
+
+/* Animation au survol de la nav bar*/ 
+ul li a::after {
+
+content: " ";
+display: flex;
+position:absolute;
+width: 0%;
+height: 2px;
+margin-top: 2px ;
+margin-left: -4px;
+background: #dd863f;
+
+transition:  width 1.5s ease-in;} 
+ul li a:hover {
+    color: #df985e;}
+
+ul li a:hover::after{
+    width:  5% ;}
+
+
+/* Les bordures */
+.bordure /* Le background de la bordure*/ {
+    background-image: linear-gradient(180deg, #210806, #471307 );
+    padding-top: 20px   ;
+    padding-bottom: 20px;
+    box-shadow:  inset 0px 0px 18px 0px #a01616;}
+.bordure h2 /* La police de la bordure*/ {
+color: #9c5b26;
+font-size: 41px;
+text-align: center;
+text-shadow: rgba(0, 0,0, 0.4); 
+font-family: "ringbearer";
+text-shadow: 0 0.1em 0.1em black;}
+
+
+
+/* CONTAINER */ 
+
+
+.container /* le container des sections principales */{ 
+display: inline-flex;
+justify-content: center ;
+margin-left: 16%;
+margin-right: 16%;
+margin-top: 17vh ;
+margin-bottom: 19vh ;
+gap: 12%  ;}
+
+
+
+
+#section3 .container {
+    margin: -3% 14% 3% 18%;}
+
+#section5 .container {
+    margin: 2.5% 14% 6% 18%}
+
+#section7  .container { display: grid ; grid-template-columns: repeat(2, 1fr);
+padding-left: 0%;
+padding-right: 0%;
+gap:9%}
+
+    /*
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);}*/ 
+
+#section9 {
+    display: flex;}
+
+#section11 .container { 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;}
+
+#section11 h1 {
+    color: #9c5b26;}
+
+/* petite map à la fin*/
+.iframe {
+    border-radius: 5%; box-shadow:  5px 5px 5px 0px rgba(0, 0, 0, 0.322);}
+
+/*   bouton  */ 
+
+button {
+    margin:10px ;
+    width: 420px;
+    height: 55px;
+        /*padding: 7px 160px; */ 
+        font-size: 18px;
+        border-radius: 10px; 
+        font-family: 'Abhaya Libre';}
+
+.contact  { 
+     color: #ccaf6e9c ;
+            font-size: 18px; 
+            background-image: linear-gradient(to top, #380c07 0%, #751c17 100%);
+            border-color: #380505;
+            box-shadow: 1px 10px 0 0 #491409 ;}
+
+.acheter{ 
+    color: rgba(204,175,110,0.61) ;
+           font-size: 18px; 
+           background-image: linear-gradient(to top, #380c07 0%, #751c17 100%);
+           border-color: #380505;
+           box-shadow: 1px 10px 0 0 #491409 ;}
+
+.abonner { 
+    padding: 7px 180px;
+    color: #5a3314 ;
+    font-size: 18px; 
+    background-color: rgb(214, 163, 95)  ;
+   /* background-image: rgba(204,175,110,0.61) /* linear-gradient(to top, #380c07 0%, #751c17 100%); */;
+    border-color: #e7a144;
+    box-shadow: 1px 10px 0 0 #ccaf6e9c;}
+/*
+#section3 .abonner { 
+    /*margin-top: 108px;} */
+/*
+#section5 .abonner { 
+  /*  margin-top: 108px;} */
+
+
+
+.titregradiant /* Style gradiant du titre de la section 1 et de la liste d'attente*/ {
+    font-family: 'Abhaya Libre', serif;
+	background: linear-gradient(to top, #e89805 0%, #b65b07 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 49px;
+    text-shadow: 0 0.1em 0.1em black;
+    padding-left:10px;}
+
+#section9 img {width: auto ; height: 430px;}
+
+
+
+
+/* style effet image grandissant hover*/
+.gauche23 {
+     display: flex; margin-left: 29.5%;}
+
+.droite3 { 
+    height:105%;
+    width: 88%;
+    display: flex;
+    grid-column: 2/13;
+    gap: 2rem;}
+
+.item:hover {
+    width: 195%;}
+
+.item {
+    background-position: center top;
+    background-size: auto 100%;
+    border-radius: 0.5rem;
+   
+    flex-grow: 1;
+    transition: width 300ms ease;
+    width: 100%;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+.S1 /* Effet parallax */ {
+    min-height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;}
+
+/* Les backgrounds des sections*/ 
+    
+#section1  /* Le background */ {
+    background-image: url(/image/bg1.png);}
+#section3 /* Le background*/ { 
+    background-image: url(/image/bg2.png);}
+#section5 /* Le background*/ { 
+    background-image: url(/image/bg3.png);}
+#section7 /* Le background*/ { 
+   
+    background-image: url(/image/bg4.png);}
+#section9 /* Le background*/ {
+    background-image: url(image/bg5.png);}
+#section11 /* Le background*/ {
+    background-image: url(image/bg6.png);}
+#sectionform /* Le background*/{
+    background-image: url(image/bgfelicitation.png);}
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+    /* slider 3D */
+
+   
+        .Bodyslider   {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height: 75vh;  }
+   
+        .box {
+    
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transform-style: preserve-3d;
+        animation: animate 30s linear infinite;} 
+  
+        @keyframes animate {
+        0%  {
+            transform: perspective(1500px)  rotateY(0deg) rotateZ(0deg);
+        }
+        50%  {
+            transform: perspective(1500px)  rotateY(180deg) rotateZ(20deg) ;
+        }
+        100%  {
+            transform: perspective(1500px) rotateY(360deg) rotateZ(0deg);
+        }}
+  
+        .box div {
+    
+        position:absolute;
+        top:0; left:0;
+        height: 100% ;
+        width: 100%;
+        transform-style: preserve-3d;
+        transform-origin: center;
+        transform: rotateY(calc(var(--v)*45deg)) translateZ(300px) ;
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);}
+  
+        .box div img{ 
+    
+        position:absolute; 
+        height: 100%;
+        width: 100%;
+        object-fit: cover;}
+
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+    /* SLIDER 2D */
+
+
+        *  {
+            flex-wrap: nowrap; }    
+       
+        .bodyslider2D div {
+            display: inline-flex; gap: 1px
+           ;}     
+       
+        .bodyslider2D {
+         height: 700px;
+         max-width: 90%;
+         
+           display: inline-flex;
+           place-items: center;
+           padding-left: 8%;
+           border-radius: 4px;}
+       
+       .slider2D {
+           height: 650px;
+          
+           position: relative;
+           width: 5540px;
+           display: inline-flex;
+           place-items: center;
+           grid-template-columns: repeat;
+           overflow: hidden;
+           border-radius: 4px;}
+       
+       .slidertrack{
+           display: inline-flex;
+           width: calc((600px * 8)); 
+
+           background-color: rgb(139, 0, 0);}
+       
+       .slide2 { 
+           
+            height: 40PX;
+            width: 50PX;
+            display: inline-flex;
+            align-items: center;
+            gap: 250px;
+            padding: 30%;
+            margin: 12%;
+            border-radius: 4px;
+         
+       
+       ANIMATION: scroll 40s linear infinite }
+       
+       .slide2 img {
+        box-shadow:  5px 5px 5px 0px rgba(0, 0, 0, 0.322);
+        border-radius: 5%;}
+          
+       @keyframes scroll{ 
+       
+       
+           0% { transform: translateX(0px);}
+       
+       
+           100% { transform: translateX( CALC(-400px*12));}
+       }
+       
+/* ----------------------------------------------------------------------------------------------------------------*/
+/*   FORMULAIRE  page :listeattente*/
+
+form { 
+    display: flex; flex-direction: column;
+    padding-left: 20px;
+    }
+
+.containerform {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0% 12% 6% 12%
+;}
+
+header .bordure {
+    max-height: 8vh;}
+
+form {
+    margin-top: -10%;
+}
+
+input { 
+    padding-left: 20px; border-radius: 15px; height: 42px; width: 430px ; justify-content: center; align-items: center;}
+
+input ::placeholder {
+     justify-content: center ; align-items: center;  text-align: center;}
+
+form h2 { 
+    justify-content: center;
+    text-align: center;
+    color: rgb(175, 102, 6); 
+    margin: 7%; 
+    background-color: rgba(0, 0, 0, 0.171);  
+     text-shadow: 0 0.1em 0.1em black;
+}
+
+.titregradiantlisteattente /* Style gradiant du titre de la section 1 et de la liste d'attente*/ {
+    font-family: 'Abhaya Libre', serif;
+	background: linear-gradient(to top, #e89805 0%, #b65b07 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 49px;
+    text-shadow: 0 0.1em 0.1em black;
+    width: 950%; ;
+    line-height: 190%;
+    margin-top: -80px;
+    }
